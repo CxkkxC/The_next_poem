@@ -1,0 +1,50 @@
+﻿#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @Time    : 2019/12/27 18:18
+# @Author  : Cxk
+# @File    : Sound_Recording.py
+
+import pyaudio
+import os
+import wave
+# 用Pyaudio库录制音频
+#   out_file:输出音频文件名
+#   rec_time:音频录制时间(秒)
+def audio_record(out_file, rec_time):
+    CHUNK = 1024
+    FORMAT = pyaudio.paInt16 #16bit编码格式
+    CHANNELS = 1 #单声道
+    RATE = 16000 #16000采样频率
+    
+    p = pyaudio.PyAudio()
+    # 创建音频流 
+    stream = p.open(format=FORMAT, # 音频流wav格式
+                    channels=CHANNELS, # 单声道
+                    rate=RATE, # 采样率16000
+                    input=True,
+                    frames_per_buffer=CHUNK)
+
+    print("开始录音...")
+
+    frames = [] # 录制的音频流
+    # 录制音频数据
+    for i in range(0, int(RATE / CHUNK * rec_time)):
+        data = stream.read(CHUNK)
+        frames.append(data)
+    
+    # 录制完成
+    stream.stop_stream()
+    stream.close()
+    p.terminate()
+
+    print("录音完毕...")
+
+    # 保存音频文件
+    wf = wave.open(out_file, 'wb')
+    wf.setnchannels(CHANNELS)
+    wf.setsampwidth(p.get_sample_size(FORMAT))
+    wf.setframerate(RATE)
+    wf.writeframes(b''.join(frames))
+    wf.close()
+
+#     audio_record("yinping.wav", 5)

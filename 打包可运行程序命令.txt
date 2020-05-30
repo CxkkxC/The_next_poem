@@ -1,0 +1,1 @@
+pyinstaller -F -w -i cxk.ico Speech_Recognition.py -p Sound_Recording.py -p Speech_Synthesis.py -p tuling.py --hidden-import Sound_Recording --hidden-import Speech_Synthesis --hidden-import tuling
