@@ -1,4 +1,8 @@
 # The_next_poem
 In the next sentence of the poem, Python is used as the logic control, pyqt5 is used as the GUI, and the open-source ancient poetry database is used as the data. I convert it to SQLite3. When running, I need to download the ancient poetry database. The file address is:
+Link: https://pan.baidu.com/s/1iFpsv63_ 9g_ co9CSHQcPSQ
+Extraction code: fwyg
 
-Ê«µÄÏÂÒ»¾ä£¬²ÉÓÃpython×÷ÎªÂß¼­¿ØÖÆ£¬pyqt5×÷ÎªGUI£¬Êı¾İ²ÉÓÃ¿ªÔ´¹ÅÊ«Êı¾İ¿â£¬±¾ÈË×ª»»Îªsqlite3£¬ÔËĞĞÊ±ĞèÒªÏÂÔØ¹ÅÊ«Êı¾İ¿â£¬ÎÄ¼şµØÖ·£º
+è¯—çš„ä¸‹ä¸€å¥ï¼Œé‡‡ç”¨pythonä½œä¸ºé€»è¾‘æ§åˆ¶ï¼Œpyqt5ä½œä¸ºGUIï¼Œæ•°æ®é‡‡ç”¨å¼€æºå¤è¯—æ•°æ®åº“ï¼Œæœ¬äººè½¬æ¢ä¸ºsqlite3ï¼Œè¿è¡Œæ—¶éœ€è¦ä¸‹è½½å¤è¯—æ•°æ®åº“ï¼Œæ–‡ä»¶åœ°å€ï¼š
+é“¾æ¥ï¼šhttps://pan.baidu.com/s/1iFpsv63_9g_co9CSHQcPSQ 
+æå–ç ï¼šfwyg
